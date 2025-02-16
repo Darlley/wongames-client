@@ -29,6 +29,17 @@ Artigo citado: ["A Comprehensive Guide to Font Loading Strategies" (Zach Leather
 | 70. Logo Parte 2: Utilizando o currentColor do SVG e non null assertion do TS       |   ✅   |
 | 71. Logo Parte 3: Configurando args e controls no Storybook                         |   ✅   |
 | 72. Logo Parte 4: Criando um helper de testes renderWithTheme                       |   ✅   |
-| 73. Logo Parte 5: Criando primeiros testes                                          |   ❌   |
-| 74. Logo Parte 6: Criando uma outra prop da logo usando o TDD                       |   ❌   |
-| 75. Logo Parte 7: Trabalhando com responsividade e testando media-queries           |   ❌   |
+| 73. Logo Parte 5: Criando primeiros testes                                          |   ✅   |
+| 74. Logo Parte 6: Criando uma outra prop da logo usando o TDD                       |   ✅   |
+| 75. Logo Parte 7: Trabalhando com responsividade e testando media-queries           |   ✅   |
+
+| Seção 9: Módulo 3: Criando componentes primitivos Heading, Button e helper responsivo | Status |
+| --------------------------------------------------------------------------------------| :----: |
+| 76. Heading Parte 1: Criando o componente e suas variações                            |   ❌   |
+| 77. Heading Parte 2: Criando os testes e pequenos ajustes                             |   ❌   |
+| 77. Heading Parte 2: Criando os testes e pequenos ajustes                             |   ❌   |
+| 78. Criando um componente helper de responsividade com TDD (MediaMatch)               |   ❌   |
+| 79. Button Parte 1: Criando os diferentes tamanhos para o Button                      |   ❌   |
+| 80. Button Parte 2: Escrevendo testes para os sizes do Button                         |   ❌   |
+| 81. Button Parte 3: Adicionando opção de fullWidth                                    |   ❌   |
+| 82. Button Parte 4: Adicionando opção de icones                                       |   ❌   |
