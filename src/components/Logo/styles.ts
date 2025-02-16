@@ -3,6 +3,6 @@ import { LogoProps } from '.'
 
 export const Wrapper = styled.div<LogoProps>`
   ${({ theme, color }) => css`
-    color: ${theme.colors[color]};
+    color: ${theme.colors[color!]};
   `}
 `
