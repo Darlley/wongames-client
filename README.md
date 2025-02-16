@@ -15,8 +15,8 @@ Inicio: 10/02/2025
 | 63. Iniciando o projeto através do [nosso Boilerplate](https://github.com/Darlley/react-avancado) |   ✅   |
 | 64. FIX: Corrigindo configuração do jest-styled-components                  |   ✅   |
 | 65. Utilizando Web Fonts no Next e detalhes                                 |   ✅   |
-| 66. Criando o theme.ts (colors, spacings, layers, etc)                      |   ❌   |
-| 67. Configurando ThemeProvider e suporte do TypeScript com declaration file |   ❌   |
+| 66. Criando o theme.ts (colors, spacings, layers, etc)                      |   ✅   |
+| 67. Configurando ThemeProvider e suporte do TypeScript com declaration file |   ✅   |
 | 68. Configurando webpack do Storybook para absolute path                    |   ❌   |
 
 Artigo citado: ["A Comprehensive Guide to Font Loading Strategies" (Zach Leatherman)](https://www.zachleat.com/web/comprehensive-webfonts/)
