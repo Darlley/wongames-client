@@ -22,3 +22,13 @@ Figma do projeto: [https://www.figma.com/design/xwq...](https://www.figma.com/de
 | 68. Configurando webpack do Storybook para absolute path                                          |   ✅   |
 
 Artigo citado: ["A Comprehensive Guide to Font Loading Strategies" (Zach Leatherman)](https://www.zachleat.com/web/comprehensive-webfonts/)
+
+| Seção 8: Módulo 3: Criando primeiro componente Logo (SVG + React)                   | Status |
+| ----------------------------------------------------------------------------------- | :----: |
+| 69. Logo Parte 1: Baixando do Figma, otimizando no SVG Omg e usando como componente |   ✅   |
+| 70. Logo Parte 2: Utilizando o currentColor do SVG e non null assertion do TS       |   ✅   |
+| 71. Logo Parte 3: Configurando args e controls no Storybook                         |   ✅   |
+| 72. Logo Parte 4: Criando um helper de testes renderWithTheme                       |   ❌   |
+| 73. Logo Parte 5: Criando primeiros testes                                          |   ❌   |
+| 74. Logo Parte 6: Criando uma outra prop da logo usando o TDD                       |   ❌   |
+| 75. Logo Parte 7: Trabalhando com responsividade e testando media-queries           |   ❌   |
