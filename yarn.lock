@@ -1084,7 +1084,7 @@
     core-js-pure "^3.19.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.14.8", "@babel/runtime@^7.16.3", "@babel/runtime@^7.17.8", "@babel/runtime@^7.3.1", "@babel/runtime@^7.5.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.14.8", "@babel/runtime@^7.16.3", "@babel/runtime@^7.17.8", "@babel/runtime@^7.19.0", "@babel/runtime@^7.20.7", "@babel/runtime@^7.3.1", "@babel/runtime@^7.5.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.26.9"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.26.9.tgz"
   integrity sha512-aA63XwOkcl4xxQa3HjPMqOP6LiK0ZDv3mUPYEFXkpHbaFjtGggE1A61FjFzJnB+p7/oy2gA8E+rcBNl/zC1tMg==
@@ -2825,6 +2825,53 @@
     regenerator-runtime "^0.13.7"
     resolve-from "^5.0.0"
     store2 "^2.12.0"
+
+"@styled-icons/boxicons-regular@^10.34.0":
+  version "10.47.0"
+  resolved "https://registry.npmjs.org/@styled-icons/boxicons-regular/-/boxicons-regular-10.47.0.tgz"
+  integrity sha512-z8KczDp4VArXvOn8i2j66Xs4oX9oiiJEhMoHydY3uC9kdtImcxhZ/xHPrgTJLkbK6f5ikwB4CKVnSqQGzzAJNw==
+  dependencies:
+    "@babel/runtime" "^7.20.7"
+    "@styled-icons/styled-icon" "^10.7.0"
+
+"@styled-icons/boxicons-solid@^10.34.0":
+  version "10.47.0"
+  resolved "https://registry.npmjs.org/@styled-icons/boxicons-solid/-/boxicons-solid-10.47.0.tgz"
+  integrity sha512-M795TXYtSJCpfr+ukHZfH9mA0j5MPlB5vwRCnU3O+dojAYla/zoaSashjhUbmlgzKNwALWNfzOqicSCAzU2fhg==
+  dependencies:
+    "@babel/runtime" "^7.20.7"
+    "@styled-icons/styled-icon" "^10.7.0"
+
+"@styled-icons/fa-brands@^10.34.0":
+  version "10.47.0"
+  resolved "https://registry.npmjs.org/@styled-icons/fa-brands/-/fa-brands-10.47.0.tgz"
+  integrity sha512-w+G31+61nBnjxzCwMs+H9rNm9jl+HhtRgZYvNd+2NKQn1dRbHbBVXzQEHCOL6hksvkDbIa0iPrenqMU6pB+wZQ==
+  dependencies:
+    "@babel/runtime" "^7.20.7"
+    "@styled-icons/styled-icon" "^10.7.0"
+
+"@styled-icons/material-outlined@^10.34.0":
+  version "10.47.0"
+  resolved "https://registry.npmjs.org/@styled-icons/material-outlined/-/material-outlined-10.47.0.tgz"
+  integrity sha512-/QeDSGXlfRoIsgx4g4Hb//xhsucD4mJJsNPk/e1XzckxkNG+YHCIjbAHzDwxwNfSCJYcTDcOp2SZcoS7iyNGlw==
+  dependencies:
+    "@babel/runtime" "^7.20.7"
+    "@styled-icons/styled-icon" "^10.7.0"
+
+"@styled-icons/remix-fill@^10.18.0":
+  version "10.46.0"
+  resolved "https://registry.npmjs.org/@styled-icons/remix-fill/-/remix-fill-10.46.0.tgz"
+  integrity sha512-D2rWGJ9/7BR+3TMvmIoWGASMfyhWT4lTF+we8h9Pya5Ye+69cftvp817DMuaR/6czCugXTrB++HTQX0XJfoBFw==
+  dependencies:
+    "@babel/runtime" "^7.19.0"
+    "@styled-icons/styled-icon" "^10.7.0"
+
+"@styled-icons/styled-icon@^10.7.0":
+  version "10.7.1"
+  resolved "https://registry.npmjs.org/@styled-icons/styled-icon/-/styled-icon-10.7.1.tgz"
+  integrity sha512-WLYaeMTMhMkSxE+v+of+r2ovIk0tceDGfv8iqWHRMxvbm+6zxngVcQ4ELx6Zt/LFxqckmmoAdvo6ehiiYj6I6A==
+  dependencies:
+    "@babel/runtime" "^7.20.7"
 
 "@surma/rollup-plugin-off-main-thread@^2.2.3":
   version "2.2.3"
@@ -12497,7 +12544,7 @@ style-to-object@^0.3.0, style-to-object@0.3.0:
   dependencies:
     inline-style-parser "0.1.1"
 
-"styled-components@>= 1", "styled-components@>= 2", "styled-components@>= 5", styled-components@5.3.3:
+styled-components@*, "styled-components@>= 1", "styled-components@>= 2", "styled-components@>= 5", styled-components@>=4.1.0, styled-components@5.3.3:
   version "5.3.3"
   resolved "https://registry.npmjs.org/styled-components/-/styled-components-5.3.3.tgz"
   integrity sha512-++4iHwBM7ZN+x6DtPPWkCI4vdtwumQ+inA/DdAsqYd4SVgUKJie5vXyzotA00ttcFdQkCng7zc6grwlfIfw+lw==
