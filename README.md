@@ -35,11 +35,22 @@ Artigo citado: ["A Comprehensive Guide to Font Loading Strategies" (Zach Leather
 
 | Seção 9: Módulo 3: Criando componentes primitivos Heading, Button e helper responsivo | Status |
 | --------------------------------------------------------------------------------------| :----: |
-| 76. Heading Parte 1: Criando o componente e suas variações                            |   ❌   |
-| 77. Heading Parte 2: Criando os testes e pequenos ajustes                             |   ❌   |
-| 77. Heading Parte 2: Criando os testes e pequenos ajustes                             |   ❌   |
-| 78. Criando um componente helper de responsividade com TDD (MediaMatch)               |   ❌   |
-| 79. Button Parte 1: Criando os diferentes tamanhos para o Button                      |   ❌   |
-| 80. Button Parte 2: Escrevendo testes para os sizes do Button                         |   ❌   |
-| 81. Button Parte 3: Adicionando opção de fullWidth                                    |   ❌   |
-| 82. Button Parte 4: Adicionando opção de icones                                       |   ❌   |
+| 76. Heading Parte 1: Criando o componente e suas variações                            |   ✅   |
+| 77. Heading Parte 2: Criando os testes e pequenos ajustes                             |   ✅   |
+| 77. Heading Parte 2: Criando os testes e pequenos ajustes                             |   ✅   |
+| 78. Criando um componente helper de responsividade com TDD (MediaMatch)               |   ✅   |
+| 79. Button Parte 1: Criando os diferentes tamanhos para o Button                      |   ✅   |
+| 80. Button Parte 2: Escrevendo testes para os sizes do Button                         |   ✅   |
+| 81. Button Parte 3: Adicionando opção de fullWidth                                    |   ✅   |
+| 82. Button Parte 4: Adicionando opção de icones                                       |   ✅   |
+
+| Seção 10: Módulo 3: Criando um menu completo com TDD e acessibilidade  | Status |
+| -----------------------------------------------------------------------| :----: |
+| 83. Menu Parte 1: Apresentando as versões do Menu                      |   ✅   |
+| 84. Menu Parte 2: Criando a versão mobile do Menu                      |   ✅   |
+| 85. Menu Parte 3: Melhorando acessibilidade e primeiros testes         |   ❌   |
+| 86. Menu Parte 4: Criando lógica de abrir/fechar com React Hooks e TDD |   ❌   |
+| 87. Menu Parte 5: Criando estilos para o Menu Full                     |   ❌   |
+| 88. Menu Parte 6: Criando animações para o menu                        |   ❌   |
+| 89. Menu Parte 7: Criando regra para usuário logado/deslogado          |   ❌   |
+| 90. Menu Parte 8: Ajustando o Menu para Desktop                        |   ❌   |
