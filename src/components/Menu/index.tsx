@@ -8,6 +8,8 @@ import { Close as CloseIcon } from '@styled-icons/material-outlined/Close'
 import Logo from 'components/Logo'
 
 import * as S from './styles'
+import Link from 'next/link'
+import Button from 'components/Button'
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -34,6 +36,19 @@ const Menu = () => {
           <S.MenuLink href="#">Home</S.MenuLink>
           <S.MenuLink href="#">Explore</S.MenuLink>
         </S.MenuNav>
+
+
+        <S.RegisterBox>
+          <Link href="/sign-in" passHref>
+            <Button fullWidth size="medium">
+              Log in now
+            </Button>
+          </Link>
+          <span>or</span>
+          <Link href="/sign-up" passHref>
+            <S.CreateAccount title="Sign Up">Sign Up</S.CreateAccount>
+          </Link>
+        </S.RegisterBox>
       </S.MenuFull>
     </S.Wrapper>
   )
