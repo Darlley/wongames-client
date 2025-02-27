@@ -50,7 +50,7 @@ Artigo citado: ["A Comprehensive Guide to Font Loading Strategies" (Zach Leather
 | 84. Menu Parte 2: Criando a versão mobile do Menu                      |   ✅   |
 | 85. Menu Parte 3: Melhorando acessibilidade e primeiros testes         |   ✅   |
 | 86. Menu Parte 4: Criando lógica de abrir/fechar com React Hooks e TDD |   ✅   |
-| 87. Menu Parte 5: Criando estilos para o Menu Full                     |   ❌   |
-| 88. Menu Parte 6: Criando animações para o menu                        |   ❌   |
+| 87. Menu Parte 5: Criando estilos para o Menu Full                     |   ✅   |
+| 88. Menu Parte 6: Criando animações para o menu                        |   ✅   |
 | 89. Menu Parte 7: Criando regra para usuário logado/deslogado          |   ❌   |
 | 90. Menu Parte 8: Ajustando o Menu para Desktop                        |   ❌   |

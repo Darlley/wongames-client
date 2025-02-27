@@ -37,7 +37,6 @@ const Menu = () => {
           <S.MenuLink href="#">Explore</S.MenuLink>
         </S.MenuNav>
 
-
         <S.RegisterBox>
           <Link href="/sign-in" passHref>
             <Button fullWidth size="medium">
