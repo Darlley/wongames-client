@@ -1,12 +1,13 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
-export const Wrapper = styled.menu`
-  ${({ theme }) => css`
+export const Wrapper = styled.menu<MenuFullProps>`
+  ${({ theme, isOpen }) => css`
     display: flex;
     align-items: center;
     padding: ${theme.spacings.small} 0;
-    justify-content: space-between;
+    position: relative;
+    z-index: ${isOpen ? theme.layers.menu : `calc(${theme.layers.menu} - 1)`};
   `}
 `
 
@@ -30,7 +31,8 @@ export const IconWrapper = styled.div`
 export const MenuGroup = styled.div`
   ${({ theme }) => css`
     display: flex;
-    gap: ${theme.spacings.xsmall};
+    flex-grow: 1;
+    justify-content: flex-end;
     align-items: center;
     z-index: ${theme.layers.menu} + 1;
 
