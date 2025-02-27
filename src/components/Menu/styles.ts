@@ -40,6 +40,49 @@ export const MenuGroup = styled.div`
   `}
 `
 
+export const MenuNav = styled.div`
+  ${({ theme }) => css`
+    ${media.greaterThan('medium')`
+			margin-left: ${theme.spacings.small};
+		`}
+  `}
+`
+
+export const MenuLink = styled.a`
+  ${({ theme }) => css`
+    position: relative;
+    color: ${theme.colors.white};
+    font-size: ${theme.font.sizes.medium};
+    margin: 0.3rem ${theme.spacings.small} 0;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 0.3rem;
+        background-color: ${theme.colors.primary};
+        animation: hoverAnimation 0.2s forwards;
+      }
+
+      @keyframes hoverAnimation {
+        from {
+          width: 0;
+          left: 50%;
+          clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        to {
+          clip-path: polygon(0% 0, 100% 0, 95% 100%, 5% 100%);
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  `}
+`
+
 type MenuFullProps = {
   isOpen: boolean
 }
@@ -71,6 +114,23 @@ export const MenuFull = styled.nav<MenuFullProps>`
       cursor: pointer;
       width: 2.4rem;
       height: 2.4rem;
+    }
+
+    ${MenuNav} {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      flex-direction: column;
+    }
+
+    ${MenuLink} {
+      color: ${theme.colors.black};
+      font-weight: ${theme.font.bold};
+      font-size: ${theme.font.sizes.xlarge};
+      margin-bottom: ${theme.spacings.small};
+      transform: ${isOpen ? 'translateY(0)' : 'translateY(3rem)'};
+      transition: transform 0.3s ease-in-out;
     }
   `}
 `
