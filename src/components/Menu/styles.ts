@@ -3,7 +3,6 @@ import media from 'styled-media-query'
 
 export const Wrapper = styled.menu`
   ${({ theme }) => css`
-    width: 100%;
     display: flex;
     align-items: center;
     padding: ${theme.spacings.small} 0;
@@ -32,6 +31,12 @@ export const MenuGroup = styled.div`
   ${({ theme }) => css`
     display: flex;
     gap: ${theme.spacings.xsmall};
+    align-items: center;
+    z-index: ${theme.layers.menu} + 1;
+
+    > div {
+      margin-left: ${theme.spacings.xsmall};
+    }
   `}
 `
 
@@ -40,7 +45,32 @@ type MenuFullProps = {
 }
 
 export const MenuFull = styled.nav<MenuFullProps>`
-  ${({ isOpen }) => css`
+  ${({ theme, isOpen }) => css`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: ${theme.colors.white};
+    position: fixed;
+    z-index: ${theme.layers.menu};
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out;
     opacity: ${isOpen ? 1 : 0};
+    pointer-events: ${isOpen ? 'all' : 'none'};
+    visibility: ${isOpen ? 'visible' : 'hidden'};
+
+    > svg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: ${theme.spacings.xsmall};
+      cursor: pointer;
+      width: 2.4rem;
+      height: 2.4rem;
+    }
   `}
 `

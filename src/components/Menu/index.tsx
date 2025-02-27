@@ -17,7 +17,7 @@ const Menu = () => {
         <MenuIcon aria-label="Open Menu" />
       </S.IconWrapper>
       <S.LogoWrapper>
-        <Logo />
+        <Logo hideOnMobile />
       </S.LogoWrapper>
       <S.MenuGroup>
         <S.IconWrapper>
