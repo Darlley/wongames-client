@@ -3,11 +3,23 @@ import { render, screen } from '@testing-library/react'
 import Footer from '.'
 
 describe('<Footer />', () => {
-  // TODO: FAZER OS TESTES
   it('should render 4 columns topics', () => {
-    // expect coluna contato
-    // expect coluna follow us
-    // expect coluna links
-    // expect coluna location
+    const { container } = render(<Footer />)
+
+    expect(
+      screen.getByRole('heading', { name: 'Contact Us' })
+    ).toBeInTheDocument()
+
+    expect(
+      screen.getByRole('heading', { name: 'Follow us' })
+    ).toBeInTheDocument()
+
+    expect(screen.getByRole('heading', { name: 'Links' })).toBeInTheDocument()
+
+    expect(
+      screen.getByRole('heading', { name: 'Location' })
+    ).toBeInTheDocument()
+
+    expect(container.firstChild).toMatchSnapshot()
   })
 })
