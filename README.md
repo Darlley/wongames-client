@@ -52,5 +52,13 @@ Artigo citado: ["A Comprehensive Guide to Font Loading Strategies" (Zach Leather
 | 86. Menu Parte 4: Criando lógica de abrir/fechar com React Hooks e TDD |   ✅   |
 | 87. Menu Parte 5: Criando estilos para o Menu Full                     |   ✅   |
 | 88. Menu Parte 6: Criando animações para o menu                        |   ✅   |
-| 89. Menu Parte 7: Criando regra para usuário logado/deslogado          |   ❌   |
-| 90. Menu Parte 8: Ajustando o Menu para Desktop                        |   ❌   |
+| 89. Menu Parte 7: Criando regra para usuário logado/deslogado          |   ✅   |
+| 90. Menu Parte 8: Ajustando o Menu para Desktop                        |   ✅   |
+
+| Seção 11: Módulo 3: Ajustes/Refactor em componentes já existentes e Footer  | Status |
+| ----------------------------------------------------------------------------| :----: |
+| 91. EXTRA: Definindo types para jest-styled-components                      |   ✅   |
+| 92. Ajustando Heading para conter size e lineColors                         |   ❌   |
+| 93. Criando o Footer e testes como exercício                                |   ❌   |
+| 94. Button Parte 1: Ajustando para aceitar polimorfismo "as"                |   ❌   |
+| 95. Button Parte 2: Ajustando visual para quando for um link                |   ❌   |
