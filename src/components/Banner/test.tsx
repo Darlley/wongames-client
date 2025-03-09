@@ -1,19 +1,11 @@
-import { render, screen } from '@testing-library/react'
-
-import Banner from '.'
+import { screen } from '@testing-library/react'
 import { renderWithTheme } from 'utils/tests/helpers'
 
-const props = {
-  img: 'https://source.unsplash.com/user/willianjusten/1042x580',
-  title: 'Defy death',
-  subtitle: '<p>Play the new <strong>CrashLands</strong> season',
-  buttonLabel: 'Buy now',
-  buttonLink: '/games/defy-death'
-}
+import Banner, { DefaultBannerProps } from '.'
 
 describe('<Banner />', () => {
   it('should render correctly', () => {
-    renderWithTheme(<Banner {...props} />)
+    renderWithTheme(<Banner {...DefaultBannerProps} />)
 
     expect(
       screen.getByRole('heading', { name: /Defy Death/i })
