@@ -58,7 +58,32 @@ Artigo citado: ["A Comprehensive Guide to Font Loading Strategies" (Zach Leather
 | Seção 11: Módulo 3: Ajustes/Refactor em componentes já existentes e Footer  | Status |
 | ----------------------------------------------------------------------------| :----: |
 | 91. EXTRA: Definindo types para jest-styled-components                      |   ✅   |
-| 92. Ajustando Heading para conter size e lineColors                         |   ❌   |
-| 93. Criando o Footer e testes como exercício                                |   ❌   |
-| 94. Button Parte 1: Ajustando para aceitar polimorfismo "as"                |   ❌   |
-| 95. Button Parte 2: Ajustando visual para quando for um link                |   ❌   |
+| 92. Ajustando Heading para conter size e lineColors                         |   ✅   |
+| 93. Criando o Footer e testes como exercício                                |   ✅   |
+| 94. Button Parte 1: Ajustando para aceitar polimorfismo "as"                |   ✅   |
+| 95. Button Parte 2: Ajustando visual para quando for um link                |   ✅   |
+
+| Seção 12: Módulo 3: Criando elementos de destaque - Banner, Ribbon e Highlight | Status |
+| -------------------------------------------------------------------------------| :----: |
+| 96. Banner Parte 1: Criando estrutura inicial                                  |   ✅   |
+| 97. Banner Parte 2: Escrevendo testes                                          |   ✅   |
+| 98. Banner Parte 3: Criando os estilos                                         |   ✅   |
+| 99. Ribbon Parte 1: Criando estrutura com TDD                                  |   ✅   |
+| 100. Ribbon Parte 2: Criando os estilos                                        |   ✅   |
+| 101. Banner+Ribbon Parte 1: Escrevendo os tests e stories + exercício          |   ✅   |
+| 102. Banner+Ribbon Parte 2: Solução do exercício - implementação               |   ✅   |
+| 103. Highlight Parte 1: Apresentação do componente                             |   ✅   |
+| 104. Highlight Parte 2: Criando a estrutura e testes                           |   ✅   |
+| 105. Highlight Parte 3: Criando o CSS em detalhes                              |   ✅   |
+| 106. Highlight Parte 4: Adicionando opção de Float Image                       |   ✅   |
+| 107. Highlight Parte 5: Criando opção de diferentes alignments                 |   ✅   |
+
+| Seção 13: Módulo 3: Criando GameCard                                              | Status |
+| ----------------------------------------------------------------------------------| :----: |
+| 108. GameCard Parte 1: Apresentando o componente                                  |   ❌   |
+| 109. GameCard Parte 2: Criando estrutura e exercício para os testes               |   ❌   |
+| 110. GameCard Parte 3: Solução dos testes mais CSS já criado                      |   ❌   |
+| 111. GameCard Parte 4: Criando opção de preço promocional e exercício para testes |   ❌   |
+| 112. GameCard Parte 5: Solução dos exercícios de testes                           |   ❌   |
+| 113. GameCard Parte 6: Criando função de favoritar                                |   ❌   |
+| 114. GameCard Parte 7: Adicionando o Ribbon                                       |   ❌   |
