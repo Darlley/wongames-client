@@ -4,6 +4,11 @@ import Banner, { BannerProps, DefaultBannerProps } from '.'
 export default {
   title: 'Banner',
   component: Banner,
+  argTypes: {
+    ribbon: {
+      type: 'string'
+    }
+  },
   args: DefaultBannerProps,
   parameters: {
     layout: 'fullscreen'

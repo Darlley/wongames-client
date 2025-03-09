@@ -21,7 +21,7 @@ describe('<Banner />', () => {
   it('should render a Ribbon', () => {
     renderWithTheme(
       <Banner
-        {...props}
+        {...DefaultBannerProps}
         ribbon="My Ribbon"
         ribbonSize="small"
         ribbonColor="secondary"
