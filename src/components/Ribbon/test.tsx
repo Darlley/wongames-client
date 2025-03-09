@@ -10,6 +10,7 @@ describe('<Ribbon />', () => {
     debug(container)
 
     expect(screen.getByText(/Best Seller/i)).toBeInTheDocument()
+    expect(container.firstChild).toMatchSnapshot()
   })
 
   it('should render with the primary color', () => {
