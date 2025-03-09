@@ -11,13 +11,5 @@ module.exports = withPWA({
   pwa: {
     dest: 'public',
     disable: !isProd
-  },
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com'
-      }
-    ]
   }
 })

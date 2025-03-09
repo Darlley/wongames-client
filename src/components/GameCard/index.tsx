@@ -3,7 +3,6 @@ import {
   FavoriteBorder
 } from '@styled-icons/material-outlined'
 import * as S from './styles'
-import Image from 'next/image'
 import Button from 'components/Button'
 
 export type GameCardProps = {
@@ -16,7 +15,7 @@ export type GameCardProps = {
 const GameCard = ({ title, developer, img, price }: GameCardProps) => (
   <S.Wrapper>
     <S.ImageBox>
-      <Image src={img} alt={title} />
+      <img src={img} alt={title} />
     </S.ImageBox>
     <S.Info>
       <S.Title>{title}</S.Title>
