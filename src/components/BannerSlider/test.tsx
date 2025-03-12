@@ -43,4 +43,10 @@ describe('<BannerSlider />', () => {
       screen.getByRole('heading', { name: /defy death 2/i, hidden: true })
     ).toBeInTheDocument()
   })
+  
+  it('should render the dots', () => {
+    const { container, debug } = renderWithTheme(<BannerSlider items={items} />)
+
+    expect(container.querySelectorAll("ul.slick-dots li")).toHaveLength(2)
+  })
 })
