@@ -1,5 +1,6 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
-import Banner, { BannerProps, DefaultBannerProps } from '.'
+import Banner, { BannerProps } from '.'
+import DefaultBannerProps from './mock'
 
 export default {
   title: 'Banner',

@@ -9,7 +9,7 @@ import items from "./mock"
 export default {
   title: 'GameCardSlider',
   component: GameCardSlider,
-  args: items,
+  args: { items },
   parameters: {
     layout: 'fullscreen',
     backgrounds: {

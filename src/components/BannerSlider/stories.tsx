@@ -5,7 +5,7 @@ import items from './mock'
 export default {
   title: 'BannerSlider',
   component: BannerSlider,
-  args: items,
+  args: { items },
   parameters: {
     layout: 'fullscreen',
     backgrounds: {
