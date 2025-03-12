@@ -91,9 +91,9 @@ Artigo citado: ["A Comprehensive Guide to Font Loading Strategies" (Zach Leather
 | Seção 14: Módulo 3: Trabalhando com componentes de terceiros - Sliders com React Slick | Status |
 | ---------------------------------------------------------------------------------------| :----: |
 | 115. Slider Parte 1: Apresentando o react-slick e como faremos os componentes          |   ✅   |
-| 116. Slider Parte 2: Criando o componente de "casca" genérico                          |   ❌   |
-| 117. Slider Parte 3: Criando testes e o mock para o matchMedia                         |   ❌   |
-| 118. Banner Slider Parte 1: Criando estrutura e testes                                 |   ❌   |
-| 119. Banner Slider Parte 2: Adicionando o css                                          |   ❌   |
-| 120. Game Card Slider Parte 1: Criando a estrutura                                     |   ❌   |
-| 121. Game Card Slider Parte 2: Adicionando CSS e testes                                |   ❌   |
+| 116. Slider Parte 2: Criando o componente de "casca" genérico                          |   ✅   |
+| 117. Slider Parte 3: Criando testes e o mock para o matchMedia                         |   ✅   |
+| 118. Banner Slider Parte 1: Criando estrutura e testes                                 |   ✅   |
+| 119. Banner Slider Parte 2: Adicionando o css                                          |   ✅   |
+| 120. Game Card Slider Parte 1: Criando a estrutura                                     |   ✅   |
+| 121. Game Card Slider Parte 2: Adicionando CSS e testes                                |   ✅   |
