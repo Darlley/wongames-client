@@ -102,7 +102,7 @@ Artigo citado: ["A Comprehensive Guide to Font Loading Strategies" (Zach Leather
 | ----------------------------------------------------------------------------------| :----: |
 | 122. Home: Introdução                                                             |   ✅   |
 | 123. Home Parte 1: Criando o Container                                            |   ✅   |
-| 124. Home Parte 2: Fazendo ajustes nos estilos globais                            |   ❌   |
+| 124. Home Parte 2: Fazendo ajustes nos estilos globais                            |   ✅   |
 | 125. Home Parte 3: Removendo background global do Storybook                       |   ❌   |
 | 126. Home Parte 4: Criando backgrounds customizados para o Storybook              |   ❌   |
 | 127. Home Parte 5: Criando template para a Home                                   |   ❌   |

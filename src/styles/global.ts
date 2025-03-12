@@ -34,6 +34,11 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    &::before, 
+    &::after {
+      box-sizing: inherit;
+    }
   }
 
   ${({ theme }) => css`
@@ -43,7 +48,8 @@ const GlobalStyles = createGlobalStyle`
 
     body {
       font-family: ${theme.font.family};
-      font-size: : ${theme.font.sizes.medium};
+      font-size: ${theme.font.sizes.medium};
+      background-color: ${theme.colors.mainBg};
     }
   `}
 `
