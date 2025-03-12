@@ -105,7 +105,7 @@ Artigo citado: ["A Comprehensive Guide to Font Loading Strategies" (Zach Leather
 | 124. Home Parte 2: Fazendo ajustes nos estilos globais                            |   ✅   |
 | 125. Home Parte 3: Removendo background global do Storybook                       |   ✅   |
 | 126. Home Parte 4: Criando backgrounds customizados para o Storybook              |   ✅   |
-| 127. Home Parte 5: Criando template para a Home                                   |   ❌   |
+| 127. Home Parte 5: Criando template para a Home                                   |   ✅   |
 | 128. Home Parte 6: Adicionando os primeiros componentes estáticos                 |   ❌   |
 | 129. Home Parte 7: Métodos de data fetching do NextJS - getStatic, getServerSide  |   ❌   |
 | 130. Home Parte 8: Criando os mocks de dados                                      |   ❌   |
