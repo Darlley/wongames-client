@@ -106,9 +106,22 @@ Artigo citado: ["A Comprehensive Guide to Font Loading Strategies" (Zach Leather
 | 125. Home Parte 3: Removendo background global do Storybook                       |   ✅   |
 | 126. Home Parte 4: Criando backgrounds customizados para o Storybook              |   ✅   |
 | 127. Home Parte 5: Criando template para a Home                                   |   ✅   |
-| 128. Home Parte 6: Adicionando os primeiros componentes estáticos                 |   ❌   |
-| 129. Home Parte 7: Métodos de data fetching do NextJS - getStatic, getServerSide  |   ❌   |
-| 130. Home Parte 8: Criando os mocks de dados                                      |   ❌   |
-| 131. Home Parte 9: Conectando os dados a página                                   |   ❌   |
-| 132. Home Parte 10: Criando os estilos                                            |   ❌   |
-| 133. Home Parte 11: Otimizando os testes                                          |   ❌   |
+| 128. Home Parte 6: Adicionando os primeiros componentes estáticos                 |   ✅   |
+| 129. Home Parte 7: Métodos de data fetching do NextJS - getStatic, getServerSide  |   ✅   |
+| 130. Home Parte 8: Criando os mocks de dados                                      |   ✅   |
+| 131. Home Parte 9: Conectando os dados a página                                   |   ✅   |
+| 132. Home Parte 10: Criando os estilos                                            |   ✅   |
+| 133. Home Parte 11: Otimizando os testes                                          |   ✅   |
+
+| Seção 16: Módulo 3: Dicas rápidas de TS e nova variável de button | Status |
+| ------------------------------------------------------------------| :----: |
+| 134. Usando const assertion para melhorar autocomplete            |   ✅   |
+| 135. Criando um typecheck para testar o TS antes do next build    |   ✅   |
+| 136. Criando variável minimal para o button                       |   ✅   |
+
+| Seção 17: Módulo 3: Criando componentes de formulário | Status |
+| ------------------------------------------------------------------------------| :----: |
+| 137. Introdução e artigos                                                     |   ❌   |
+| 143. Checkbox Parte 5: Adicionando método de onChange                         |   ❌   |
+| 146. Radio - Vendo detalhes do componente já criado (mesma base do checkbox)  |   ❌   |
+| 152. Organizando o Storybook para separar por elementos de mesmo grupo        |   ❌   |
