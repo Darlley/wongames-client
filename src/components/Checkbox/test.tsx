@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { screen } from '@testing-library/react'
 
 import Checkbox from '.'
 import { renderWithTheme } from 'utils/tests/helpers'
@@ -10,5 +10,12 @@ describe('<Checkbox />', () => {
     expect(screen.getByRole('checkbox')).toBeInTheDocument()
     expect(screen.getByLabelText('checkbox label')).toBeInTheDocument()
     expect(screen.getByText('checkbox label')).toHaveAttribute('for', 'check')
+  })
+  
+  it('should render without label', () => {
+    renderWithTheme(<Checkbox htmlFor='check' />)
+
+    expect(screen.getByRole('checkbox')).toBeInTheDocument()
+    expect(screen.queryByLabelText('checkbox label')).not.toBeInTheDocument()
   })
 })
