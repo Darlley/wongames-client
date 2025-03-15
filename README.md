@@ -121,7 +121,19 @@ Artigo citado: ["A Comprehensive Guide to Font Loading Strategies" (Zach Leather
 
 | Seção 17: Módulo 3: Criando componentes de formulário | Status |
 | ------------------------------------------------------------------------------| :----: |
-| 137. Introdução e artigos                                                     |   ❌   |
+| 137. Introdução e artigos                                                     |   ✅   |
+| 138. Controlled e Uncontrolled Components no React                            |   ✅   |
+| 139. Checkbox Parte 1: Criando input de checkbox e label estáticos            |   ❌   |
+| 140. Checkbox Parte 2: Tornando o input dinâmico                              |   ❌   |
+| 141. Checkbox Parte 3: Criando opção de labelColor                            |   ❌   |
+| 142. Checkbox Parte 4: Adicionando os estilos                                 |   ❌   |
 | 143. Checkbox Parte 5: Adicionando método de onChange                         |   ❌   |
+| 144. Checkbox Parte 6: Adicionando opção de isChecked                         |   ❌   |
+| 145. Checkbox Parte 7: Refinando Storybook e teste de acessibilidade          |   ❌   |
 | 146. Radio - Vendo detalhes do componente já criado (mesma base do checkbox)  |   ❌   |
+| 147. TextField Parte 1: Estrutura inicial do input de text + exercício        |   ❌   |
+| 148. TextField Parte 2: Solução para adicionar ícones + exercício             |   ❌   |
+| 149. TextField Parte 3: Solução para iconPosition + exercício                 |   ❌   |
+| 150. TextField Parte 4: Solução para disabled + exercício                     |   ❌   |
+| 151. TextField Parte 5: Solução para mostrar erro e componente finalizado     |   ❌   |
 | 152. Organizando o Storybook para separar por elementos de mesmo grupo        |   ❌   |
