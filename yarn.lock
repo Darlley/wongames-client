@@ -2922,7 +2922,7 @@
     magic-string "^0.25.0"
     string.prototype.matchall "^4.0.6"
 
-"@testing-library/dom@^8.0.0":
+"@testing-library/dom@^8.0.0", "@testing-library/dom@>=7.21.4":
   version "8.11.1"
   resolved "https://registry.npmjs.org/@testing-library/dom/-/dom-8.11.1.tgz"
   integrity sha512-3KQDyx9r0RKYailW2MiYrSSKEfH0GTkI51UGEvJenvcoDoeRYs0PZpi2SXqtnMClQvCqdtTTpOfFETDTVADpAg==
@@ -2958,6 +2958,13 @@
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.0.0"
+
+"@testing-library/user-event@^12.1.8":
+  version "12.1.8"
+  resolved "https://registry.npmjs.org/@testing-library/user-event/-/user-event-12.1.8.tgz"
+  integrity sha512-UUcTuT8HyDwGaRXgNgvMS1uOlreLv9+WsXi1FNj3mmumnB2d3hv2cov0RAd99lx8QI2CtAAOELxoihGj8x/nWg==
+  dependencies:
+    "@babel/runtime" "^7.10.2"
 
 "@tootallnate/once@1":
   version "1.1.2"
