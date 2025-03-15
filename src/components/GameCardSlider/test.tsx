@@ -2,7 +2,7 @@ import 'match-media-mock'
 import { renderWithTheme } from 'utils/tests/helpers'
 
 import GameCardSlider from '.'
-import { items } from './stories'
+import items from './mock'
 import { screen } from '@testing-library/react'
 
 describe('<GameSlider />', () => {

@@ -1,6 +1,5 @@
 import Button from 'components/Button'
 import * as S from './styles'
-import DOMPurify from 'dompurify'
 import Ribbon, { RibbonColors, RibbonSizes } from 'components/Ribbon'
 
 export type BannerProps = {
@@ -14,14 +13,6 @@ export type BannerProps = {
   ribbonSize?: RibbonSizes
 }
 
-export const DefaultBannerProps = {
-  img: 'https://images.unsplash.com/photo-1553481187-be93c21490a9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  title: 'Defy death',
-  subtitle: '<p>Play the new <strong>CrashLands</strong> season',
-  buttonLabel: 'Buy now',
-  buttonLink: '/games/defy-death'
-}
-
 const Banner = ({
   img,
   title,
@@ -32,7 +23,10 @@ const Banner = ({
   ribbonColor = 'primary',
   ribbonSize = 'normal'
 }: BannerProps) => {
-  const sanitizedHtml = DOMPurify.sanitize(subtitle)
+  // const window = new JSDOM('').window;
+  // const purify = DOMPurify(window);
+  // const sanitizedHtml = purify.sanitize(subtitle);
+
   return (
     <S.Wrapper>
       {!!ribbon && (
@@ -45,7 +39,7 @@ const Banner = ({
 
       <S.Caption>
         <S.Title>{title}</S.Title>
-        <S.Subtitle dangerouslySetInnerHTML={{ __html: sanitizedHtml }} />
+        <S.Subtitle dangerouslySetInnerHTML={{ __html: subtitle }} />
         <Button as="a" href={buttonLink} size="large">
           {buttonLabel}
         </Button>
