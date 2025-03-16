@@ -6,11 +6,13 @@ import theme from 'styles/theme'
 
 describe('<Checkbox />', () => {
   it('should render with label', () => {
-    renderWithTheme(<Checkbox label="checkbox label" htmlFor='check' />)
+    const { container } = renderWithTheme(<Checkbox label="checkbox label" htmlFor='check' />)
 
     expect(screen.getByRole('checkbox')).toBeInTheDocument()
     expect(screen.getByLabelText('checkbox label')).toBeInTheDocument()
     expect(screen.getByText('checkbox label')).toHaveAttribute('for', 'check')
+
+    expect(container.firstChild).toMatchSnapshot()
   })
   
   it('should render without label', () => {
@@ -54,5 +56,15 @@ describe('<Checkbox />', () => {
       expect(onCheck).toHaveBeenCalledTimes(1)
     })
     expect(onCheck).toHaveBeenCalledWith(false)
+  })
+
+  it('should be accessible with tab', () => {
+    renderWithTheme(<Checkbox label="Checkbox" htmlFor="Checkbox" />)
+
+    expect(document.body).toHaveFocus()
+
+    userEvent.tab()
+
+    expect(screen.getByLabelText(/checkbox/i)).toHaveFocus()
   })
 })
