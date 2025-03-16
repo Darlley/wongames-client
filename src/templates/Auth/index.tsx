@@ -30,3 +30,5 @@ const Auth = ({ title, children }: AuthProps) => (
     </S.Content>
   </S.Wrapper>
 )
+
+export default Auth
