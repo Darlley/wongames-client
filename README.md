@@ -140,18 +140,18 @@ Artigo citado: ["A Comprehensive Guide to Font Loading Strategies" (Zach Leather
 
 | Seção 18: Módulo 3: Criando páginas de Sign In e Sign Out         | Status |
 | ------------------------------------------------------------------| :----: |
-| 153. Introdução                                                   |   ❌   |
-| 154. Criando o template de Auth e rotas                           |   ❌   |
-| 155. Criando estrutura inicial do template                        |   ❌   |
-| 156. Criando testes para o template                               |   ❌   |
-| 157. Criando estilos do template no Desktop                       |   ❌   |
-| 158. Criando estilos do template no Mobile                        |   ❌   |
-| 159. Corrigindo bug da logo em SVG com def/id duplicados          |   ❌   |
-| 160. Criando variação de size "huge" para o Heading               |   ❌   |
-| 161. Criando o componente de FormSignIn                           |   ❌   |
-| 162. Criando testes para o FormSignIn                             |   ❌   |
-| 163. Criando estilos para o FormSignIn                            |   ❌   |
-| 164. Criando o componente de FormSignUp                           |   ❌   |
-| 165. Refatorando para usar um componente de estilos para os Forms |   ❌   |
-| 166. Conectando os componentes nas páginas de Sign In e Sign Up   |   ❌   |
-| 167. Criando Links entre as páginas ( passHref e forwardRef )     |   ❌   |
+| 153. Introdução                                                   |   ✅   |
+| 154. Criando o template de Auth e rotas                           |   ✅   |
+| 155. Criando estrutura inicial do template                        |   ✅   |
+| 156. Criando testes para o template                               |   ✅   |
+| 157. Criando estilos do template no Desktop                       |   ✅   |
+| 158. Criando estilos do template no Mobile                        |   ✅   |
+| 159. Corrigindo bug da logo em SVG com def/id duplicados          |   ✅   |
+| 160. Criando variação de size "huge" para o Heading               |   ✅   |
+| 161. Criando o componente de FormSignIn                           |   ✅   |
+| 162. Criando testes para o FormSignIn                             |   ✅   |
+| 163. Criando estilos para o FormSignIn                            |   ✅   |
+| 164. Criando o componente de FormSignUp                           |   ✅   |
+| 165. Refatorando para usar um componente de estilos para os Forms |   ✅   |
+| 166. Conectando os componentes nas páginas de Sign In e Sign Up   |   ✅   |
+| 167. Criando Links entre as páginas ( passHref e forwardRef )     |   ✅   |
