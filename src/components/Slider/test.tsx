@@ -12,8 +12,6 @@ describe('<Slider />', () => {
       </Slider>
     )
 
-    // debug(container)
-
     expect(
       screen.getByText(/item 1/i).parentElement?.parentElement
     ).toHaveClass('slick-slide')

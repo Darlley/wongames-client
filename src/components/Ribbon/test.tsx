@@ -7,8 +7,6 @@ describe('<Ribbon />', () => {
   it('should render the text correctly', () => {
     const { container, debug } = renderWithTheme(<Ribbon>Best Seller</Ribbon>)
 
-    debug(container)
-
     expect(screen.getByText(/Best Seller/i)).toBeInTheDocument()
     expect(container.firstChild).toMatchSnapshot()
   })

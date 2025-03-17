@@ -6,7 +6,7 @@ import { GameCardSliderProps } from '.'
 type WrapperProps = Pick<GameCardSliderProps, 'color'>
 
 export const Wrapper = styled.section<WrapperProps>`
-  ${({ theme, color }) => css`
+  ${({ theme, color = 'white' }) => css`
     ${media.lessThan('huge')`
       overflow-x: hidden;
     `}
@@ -39,7 +39,7 @@ export const Wrapper = styled.section<WrapperProps>`
     .slick-prev,
     .slick-next {
       display: block;
-      color: ${theme.colors[color!]};
+      color: ${theme.colors[color]};
       cursor: pointer;
       position: absolute;
       top: 50%;

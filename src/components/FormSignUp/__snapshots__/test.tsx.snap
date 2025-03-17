@@ -262,13 +262,3 @@ exports[`<FormSignUp /> should render the form 1`] = `
   </form>
 </div>
 `;
-
-exports[`<FormSignUp /> should render the heading 1`] = `
-<div
-  class=""
->
-  <h1>
-    FormSignUp
-  </h1>
-</div>
-`;
