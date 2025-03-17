@@ -32,15 +32,15 @@ describe('<Menu />', () => {
     renderWithTheme(<Menu />)
     expect(screen.queryByText(/My Account/i)).not.toBeInTheDocument()
     expect(screen.queryByText(/Wishlist/i)).not.toBeInTheDocument()
-    expect(screen.getByText(/Log in now/i)).toBeInTheDocument()
-    expect(screen.getByText(/Sign Up/i)).toBeInTheDocument()
+    expect(screen.getByText(/sign up/i)).toBeInTheDocument()
+    expect(screen.getAllByText(/sign in/i)).toHaveLength(2)
   })
 
   it('shold show Wishlist and My Account when logged in', () => {
     renderWithTheme(<Menu username="Darlley" />)
     expect(screen.getByText(/My Account/i)).toBeInTheDocument()
     expect(screen.getByText(/Wishlist/i)).toBeInTheDocument()
-    expect(screen.queryByText(/Log in now/i)).not.toBeInTheDocument()
+    expect(screen.queryByText(/sign in/i)).not.toBeInTheDocument()
     expect(screen.queryByText(/Sign Up/i)).not.toBeInTheDocument()
   })
 })
