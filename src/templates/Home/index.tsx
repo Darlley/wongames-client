@@ -1,16 +1,13 @@
 import { BannerProps } from 'components/Banner'
 import { GameCardProps } from 'components/GameCard'
-import Highlight, { HighlightProps } from 'components/Highlight'
+import { HighlightProps } from 'components/Highlight'
 
 import { Container } from 'components/Container'
-import Footer from 'components/Footer'
-import Heading from 'components/Heading'
-import Menu from 'components/Menu'
-import GameCardSlider from 'components/GameCardSlider'
 import BannerSlider from 'components/BannerSlider'
 
 import * as S from './styles'
 import Showcase from 'components/Showcase'
+import Base from 'templates/Base'
 
 export type HomeTemplateProps = {
   banners: BannerProps[]
@@ -35,9 +32,8 @@ export type HomeTemplateProps = {
   freeGames,
   freeHighlight
 }: HomeTemplateProps) => (
-  <section>
+  <Base>
     <Container>
-      <Menu />
       <S.SectionBanner>
         <BannerSlider items={banners} />
       </S.SectionBanner>
@@ -61,13 +57,7 @@ export type HomeTemplateProps = {
 
       <Showcase title="Free games" highlight={freeHighlight} games={freeGames} />
     </Container>
-
-    <S.SectionFooter>
-      <Container>
-        <Footer />
-      </Container>
-    </S.SectionFooter>
-  </section>
+  </Base>
 )
 
 export default Home
