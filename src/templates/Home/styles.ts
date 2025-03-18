@@ -38,8 +38,6 @@ export const SectionNews = styled.div`
   `}
 `
 
-export const SectionMostPopular = styled.div``
-
 export const SectionUpcoming = styled.div`
   ${({ theme }) => css`
     ${HighlightStyles.Wrapper} {
@@ -47,8 +45,6 @@ export const SectionUpcoming = styled.div`
     }
   `}
 `
-
-export const SectionFreeGames = styled.div``
 
 export const SectionFooter = styled.section`
   ${({ theme }) => css`
