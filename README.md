@@ -158,10 +158,10 @@ Artigo citado: ["A Comprehensive Guide to Font Loading Strategies" (Zach Leather
 
 | Seção 19: Módulo 3: Refatorando a Home, criando template Base e aprendendo mais de mocks | Status |
 | -----------------------------------------------------------------------------------------| :----: |
-| 168. Apresentando a ideia do refactor e iniciando o Showcase                             |   ❌   |
-| 169. Criando a estrutura do Showcase                                                     |   ❌   |
-| 170. Criando testes para o Showcase                                                      |   ❌   |
-| 171. Refatorando a Home para usar o Showcase                                             |   ❌   |
-| 172. Refatorando estilos da Home                                                         |   ❌   |
-| 173. Refatorando os testes e usando mocks de componentes                                 |   ❌   |
-| 174. Criando o template Base via TDD                                                     |   ❌   |
+| 168. Apresentando a ideia do refactor e iniciando o Showcase                             |   ✅   |
+| 169. Criando a estrutura do Showcase                                                     |   ✅   |
+| 170. Criando testes para o Showcase                                                      |   ✅   |
+| 171. Refatorando a Home para usar o Showcase                                             |   ✅   |
+| 172. Refatorando estilos da Home                                                         |   ✅   |
+| 173. Refatorando os testes e usando mocks de componentes                                 |   ✅   |
+| 174. Criando o template Base via TDD                                                     |   ✅   |
