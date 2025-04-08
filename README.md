@@ -165,3 +165,7 @@ Artigo citado: ["A Comprehensive Guide to Font Loading Strategies" (Zach Leather
 | 172. Refatorando estilos da Home                                                         |   ✅   |
 | 173. Refatorando os testes e usando mocks de componentes                                 |   ✅   |
 | 174. Criando o template Base via TDD                                                     |   ✅   |
+
+| Seção 20: Módulo 3: Criando os componentes para página de Games         | Status |
+| ------------------------------------------------------------------------| :----: |
+| 175. GameInfo Parte 1: Explicando os elementos e iniciando o componente |   ✅   |
