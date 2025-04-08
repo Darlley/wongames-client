@@ -166,6 +166,25 @@ Artigo citado: ["A Comprehensive Guide to Font Loading Strategies" (Zach Leather
 | 173. Refatorando os testes e usando mocks de componentes                                 |   ✅   |
 | 174. Criando o template Base via TDD                                                     |   ✅   |
 
-| Seção 20: Módulo 3: Criando os componentes para página de Games         | Status |
-| ------------------------------------------------------------------------| :----: |
-| 175. GameInfo Parte 1: Explicando os elementos e iniciando o componente |   ✅   |
+| Seção 20: Módulo 3: Criando os componentes para página de Games                       | Status |
+| --------------------------------------------------------------------------------------| :----: |
+| 175. GameInfo Parte 1: Explicando os elementos e iniciando o componente               |   ✅   |
+| 176. GameInfo Parte 2: Criando estrutura e tests                                      |   ✅   |
+| 177. GameInfo Parte 3: Adicionando styles e stories                                   |   ❌   |
+| 178. GameDetails Parte 1: Adicionando estrutura inicial                               |   ❌   |
+| 179. GameDetails Parte 2: Adicionando ícones das plataformas                          |   ❌   |
+| 180. GameDetails Parte 3: Trabalhando com argTypes do Storybook para types diferentes |   ❌   |
+| 181. GameDetails Parte 4: Formatando datetime com Intl e criando testes               |   ❌   |
+| 182. GameDetails Parte 5: Formatando Rating e Genres e adicionando testes             |   ❌   |
+| 183. GameDetails Parte6: Ajustando stories para novos types - datetime e inline-check |   ❌   |
+| 184. TextContent Parte 1: Criando estrutura, estilos e story                          |   ❌   |
+| 185. TextContent Parte 2: Criando testes                                              |   ❌   |
+| 186. Gallery Parte 1: Introdução                                                      |   ❌   |
+| 187. Gallery Parte 2: Criando o slider das thumbnails                                 |   ❌   |
+| 187. Gallery Parte 2: Criando o slider das thumbnails                                 |   ❌   |
+| 188. Gallery Parte 3: Criando método de open do Modal                                 |   ❌   |
+| 189. Gallery Parte 4: Criando método de close do modal (apertando overlay e botão)    |   ❌   |
+| 189. Gallery Parte 4: Criando método de close do modal (apertando overlay e botão)    |   ❌   |
+| 189. Gallery Parte 4: Criando método de close do modal (apertando overlay e botão)    |   ❌   |
+| 190. Gallery Parte 5: Criando método de close com a tecla ESC (useEffect hook)        |   ❌   |
+| 191. Gallery Parte 6: Criando e referenciando o slider do modal com o slider externo  |   ❌   |
