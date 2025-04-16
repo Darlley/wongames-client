@@ -66,3 +66,16 @@ export type CheckboxProps = {
 ```
 
 Existe uma lista destes cheat sheets (InputHTMLAttributes<HTMLInputElement>): https://www.saltycrane.com/cheat-sheets/typescript/react/latest/
+
+Fechar modal com ESC:
+
+```tsx	
+useEffect(() => {
+  const handleKeyUp = ({ key }: KeyboardEvent) => {
+    key === 'Escape' && setIsOpen(false)
+  }
+
+  window.addEventListener('keyup', handleKeyUp)
+  return () => window.removeEventListener('keyup', handleKeyUp)
+}, [])
+```
