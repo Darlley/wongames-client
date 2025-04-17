@@ -188,3 +188,5 @@ Artigo citado: ["A Comprehensive Guide to Font Loading Strategies" (Zach Leather
 | 189. Gallery Parte 4: Criando método de close do modal (apertando overlay e botão)    |   ✅   |
 | 190. Gallery Parte 5: Criando método de close com a tecla ESC (useEffect hook)        |   ✅   |
 | 191. Gallery Parte 6: Criando e referenciando o slider do modal com o slider externo  |   ✅   |
+
+| Seção 21: Módulo 3: Criando a página de Games | ✅ |
