@@ -2,10 +2,12 @@ import React from 'react'
 import Game, { GameTemplateProps } from 'templates/Game'
 
 import galleryMock from 'components/Gallery/mock'
+import gamesMock from 'components/GameCardSlider/mock'
+import highlightMock from 'components/Highlight/mock'
 
-export default function GamePage({ cover, gameInfo, gallery, description, details }: GameTemplateProps) {
+export default function GamePage(props: GameTemplateProps) {
   return (
-    <Game cover={cover} gameInfo={gameInfo} gallery={gallery} description={description} details={details} />
+    <Game {...props} />
   )
 }
 
@@ -46,7 +48,10 @@ export async function getStaticProps() {
         publisher: 'CD PROJEKT RED',
         rating: 'BR18',
         genres: ['Action', 'Role-playing']
-      }
+      },
+      upcommingGames: gamesMock,
+      upcommingHighlight: highlightMock,
+      recommendedGames: gamesMock
     }
   }
 }
