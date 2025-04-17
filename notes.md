@@ -80,6 +80,8 @@ useEffect(() => {
 }, [])
 ```
 
+AULA 197
+
 Os métodos getStaticProps/getServerSideProps SÓ FUNCIONAM EM PAGES
 
 `getStaticProps` => gerar estático em build time (gatsby)
