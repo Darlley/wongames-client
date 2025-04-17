@@ -79,3 +79,10 @@ useEffect(() => {
   return () => window.removeEventListener('keyup', handleKeyUp)
 }, [])
 ```
+
+Os métodos getStaticProps/getServerSideProps SÓ FUNCIONAM EM PAGES
+
+`getStaticProps` => gerar estático em build time (gatsby)
+`getServerSideProps` => gerar via ssr a cada request (nunca vai para o bundle do client)
+`getInitialProps` => gerar via ssr a cada request (vai para o client, faz hydrate do lado do client depois do 1 req)
+`getStaticPaths` => gerar rotas dinamicas dos recursos estáticos de uma API em build time, o fallback false força a criar uma estática especifica manualmente, fallback true é quando recupera de de uma API externa.
