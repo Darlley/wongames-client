@@ -21,3 +21,9 @@ export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
 `
+
+export const Content = styled.div`
+  ${({ theme }) => css`
+    margin-top: ${theme.spacings.xlarge};
+  `}
+`
