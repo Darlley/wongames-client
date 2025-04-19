@@ -189,4 +189,7 @@ Artigo citado: ["A Comprehensive Guide to Font Loading Strategies" (Zach Leather
 | 190. Gallery Parte 5: Criando método de close com a tecla ESC (useEffect hook)        |   ✅   |
 | 191. Gallery Parte 6: Criando e referenciando o slider do modal com o slider externo  |   ✅   |
 
-| Seção 21: Módulo 3: Criando a página de Games | ✅ |
+| OUTRAS                                            | Status |
+|---------------------------------------------------| :----: |
+| Seção 21: Módulo 3: Criando a página de Games     |   ✅   |
+| Seção 22: Módulo 3: Criando a página de Wishlist  |   ✅   |
