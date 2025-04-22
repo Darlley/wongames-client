@@ -39,8 +39,8 @@ const GameItem = ({ img, title, price, downloadLink, paymentInfo }: GameItemProp
         </S.Title>
         <S.Price>{price}</S.Price>
       </S.Content>
-
-      {!!paymentInfo && (
+    </S.GameContent>
+    {!!paymentInfo && (
       <S.PaymentContent>
         <p>{paymentInfo.purchaseDate}</p>
         <S.CardInfo>
@@ -49,7 +49,6 @@ const GameItem = ({ img, title, price, downloadLink, paymentInfo }: GameItemProp
         </S.CardInfo>
       </S.PaymentContent>
     )}
-    </S.GameContent>
   </S.Wrapper>
 )
 
