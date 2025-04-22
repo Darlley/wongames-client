@@ -48,7 +48,9 @@ const Menu = ({ username }: MenuProps) => {
           <SearchIcon aria-label="Search" />
         </S.IconWrapper>
         <S.IconWrapper>
-          <ShoppingCartIcon aria-label="Open Shopping Cart" />
+          <Link href="/cart" passHref>
+            <ShoppingCartIcon aria-label="Open Shopping Cart" />
+          </Link>
         </S.IconWrapper>
         {!username && (
           <MediaMatch greaterThan="medium">
