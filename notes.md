@@ -88,3 +88,16 @@ Os métodos getStaticProps/getServerSideProps SÓ FUNCIONAM EM PAGES
 `getServerSideProps` => gerar via ssr a cada request (nunca vai para o bundle do client)
 `getInitialProps` => gerar via ssr a cada request (vai para o client, faz hydrate do lado do client depois do 1 req)
 `getStaticPaths` => gerar rotas dinamicas dos recursos estáticos de uma API em build time, o fallback false força a criar uma estática especifica manualmente, fallback true é quando recupera de de uma API externa.
+
+
+**CONDICIONAL DE PROPRIEDADES**
+
+Faça uma condicional pela propriedade com destriction de bjeto vazio (se existir a prop name o id vai ser o mesmo):
+
+```tsx
+<S.Input
+  name={name}
+  {...(label ? { id: name } : {})}
+  {...props}
+/>
+```
