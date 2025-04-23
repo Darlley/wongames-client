@@ -8,26 +8,26 @@ import { Email } from '@styled-icons/material-outlined'
 
 describe('<TextField />', () => {
   it('Renders with Label', () => {
-    renderWithTheme(<TextField label="Label" htmlFor="Field" id="Field" />)
+    renderWithTheme(<TextField label="Label" name="Field" id="Field" />)
 
     expect(screen.getByLabelText('Label')).toBeInTheDocument()
   })
 
   it('Renders without Label', () => {
-    renderWithTheme(<TextField htmlFor="field" />)
+    renderWithTheme(<TextField name="field" />)
 
     expect(screen.queryByLabelText('Label')).not.toBeInTheDocument()
   })
 
   it('Renders with placeholder', () => {
-    renderWithTheme(<TextField  htmlFor="field" placeholder="hey you" />)
+    renderWithTheme(<TextField  name="field" placeholder="hey you" />)
 
     expect(screen.getByPlaceholderText('hey you')).toBeInTheDocument()
   })
 
   it('Renders with Icon on the right side', () => {
     renderWithTheme(
-      <TextField htmlFor='field' icon={<Email data-testid="icon" />} iconPosition="right" />
+      <TextField name='field' icon={<Email data-testid="icon" />} iconPosition="right" />
     )
 
     expect(screen.getByTestId('icon').parentElement).toHaveStyle({ order: 1 })
@@ -39,7 +39,7 @@ describe('<TextField />', () => {
       <TextField
         onInput={onInput}
         label="TextField"
-        htmlFor="TextField"
+        name="TextField"
         id="TextField"
       />
     )
@@ -61,7 +61,7 @@ describe('<TextField />', () => {
       <TextField
         onInput={onInput}
         label="TextField"
-        htmlFor="TextField"
+        name="TextField"
         id="TextField"
         disabled
       />
@@ -84,7 +84,7 @@ describe('<TextField />', () => {
       <TextField
         icon={<Email data-testid="icon" />}
         label="TextField"
-        htmlFor="TextField"
+        name="TextField"
         error="Error message"
       />
     )
@@ -96,7 +96,7 @@ describe('<TextField />', () => {
 
   it('Is accessible by tab', () => {
     renderWithTheme(
-      <TextField label="TextField" htmlFor="TextField" id="TextField" />
+      <TextField label="TextField" name="TextField" id="TextField" />
     )
 
     const input = screen.getByLabelText('TextField')
@@ -110,7 +110,7 @@ describe('<TextField />', () => {
     renderWithTheme(
       <TextField
         label="TextField"
-        htmlFor="TextField"
+        name="TextField"
         id="TextField"
         disabled
       />
