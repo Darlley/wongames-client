@@ -1,4 +1,10 @@
+import { renderWithTheme } from 'utils/tests/helpers'
 import items from './mock'
+import { screen } from '@testing-library/react'
+import ExploreSidebar from '.'
+import userEvent from '@testing-library/user-event'
+import { css } from 'styled-components'
+import { Overlay } from './styles'
 
 describe('<ExploreSidebar />', () => {
   it('should render headings', () => {
