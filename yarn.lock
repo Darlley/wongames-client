@@ -2865,7 +2865,7 @@
     resolve-from "^5.0.0"
     store2 "^2.12.0"
 
-"@styled-icons/boxicons-regular@^10.34.0":
+"@styled-icons/boxicons-regular@^10.47.0":
   version "10.47.0"
   resolved "https://registry.npmjs.org/@styled-icons/boxicons-regular/-/boxicons-regular-10.47.0.tgz"
   integrity sha512-z8KczDp4VArXvOn8i2j66Xs4oX9oiiJEhMoHydY3uC9kdtImcxhZ/xHPrgTJLkbK6f5ikwB4CKVnSqQGzzAJNw==
