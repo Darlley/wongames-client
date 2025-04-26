@@ -60,7 +60,7 @@ const GameCard = ({
           </S.Price>
         )}
         <S.Price aria-label="Promotional price">
-          {promotionalPrice || price}
+          {promotionalPrice || (price === "$0.00" ? "Free" : price)}
         </S.Price>
         <Button icon={<AddShoppingCart />} size="small" />
       </S.BuyBox>

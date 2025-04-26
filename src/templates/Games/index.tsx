@@ -13,8 +13,7 @@ export type GamesTemplateProps = {
 }
 
 const GamesTemplate = ({ filterItems, games = [] }: GamesTemplateProps) => {
-  console.log(games)
-  
+
   const handleFilter = () => {
     return []
   }
