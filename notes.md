@@ -151,4 +151,26 @@ export default function ComponenteXYZ() {
 }
 ```
 
+No DevTools você consegue ver a request do GraphQL.
+
 O problema é que nossos dados estão sendo gerados no client após a renderização da página. Devemos gerar ele no servidor para não dar problema com SEO e melhorar a performance evitando um load inicial. Para evitar isso crie um arquivo `utils/apollo.ts` que verifica se ja existe uma isntancia do Client, se não existir ele cria uma nova em modo SSR.
+
+Agora fazendo a requisição no servidor:
+
+```tsx
+export async function getServerSideProps() {
+  const apolloClient = initializeApollo()
+
+  const { data, loading, error } = await apolloClient.query({
+    query: GET_LOCATIONS
+  })
+
+  return {
+    props: {
+      data
+    }
+  }
+}
+```
+
+No DevTools você não consegue mais ver a request do GraphQL, mas consegue fazer um console.log para ver na CLI ou receber o data pela props do componente.
