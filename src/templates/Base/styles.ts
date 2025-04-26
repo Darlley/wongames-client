@@ -15,3 +15,15 @@ export const SectionFooter = styled.section`
     `}
   `}
 `
+
+export const Wrapper = styled.section`
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+`
+
+export const Content = styled.div`
+  ${({ theme }) => css`
+    margin-top: ${theme.spacings.xlarge};
+  `}
+`
