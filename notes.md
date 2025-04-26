@@ -150,3 +150,5 @@ export default function ComponenteXYZ() {
   data && <Listagem />
 }
 ```
+
+O problema é que nossos dados estão sendo gerados no client após a renderização da página. Devemos gerar ele no servidor para não dar problema com SEO e melhorar a performance evitando um load inicial.
