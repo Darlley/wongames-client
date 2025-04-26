@@ -174,3 +174,10 @@ export async function getServerSideProps() {
 ```
 
 No DevTools você não consegue mais ver a request do GraphQL, mas consegue fazer um console.log para ver na CLI ou receber o data pela props do componente.
+
+--- 
+
+Como estamos trabalhando com SSR toda requisição deve ser feita em páginas.
+
+Com o `getServerSideProps` toda vez que faz uma requisição ele refaz tudo, muitas requisições sobrecarrega o servidor. Uma página de listagens de jogos não precisa ser real time, então é melhor usar o `getStaticProps` para gerar estático em build time, mas diferente do Gatsby passamos uma parametro `revalidate` para ele atualizar o estático (refazer o build) em determinado tempo em segundos. Então quando o cliente acessa a página ele vê uma página estática que foi gerada em até 60 segundos atrás.
+

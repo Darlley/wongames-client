@@ -13,12 +13,14 @@ export type GamesTemplateProps = {
 }
 
 const GamesTemplate = ({ filterItems, games = [] }: GamesTemplateProps) => {
+  console.log(games)
+  
   const handleFilter = () => {
-    return
+    return []
   }
 
   const handleShowMore = () => {
-    return
+    return []
   }
 
   return (
@@ -28,7 +30,7 @@ const GamesTemplate = ({ filterItems, games = [] }: GamesTemplateProps) => {
 
         <section>
           <Grid>
-            {games.map((item) => (
+            {games?.map((item) => (
               <GameCard key={item.title} {...item} />
             ))}
           </Grid>
