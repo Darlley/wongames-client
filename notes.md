@@ -151,4 +151,4 @@ export default function ComponenteXYZ() {
 }
 ```
 
-O problema é que nossos dados estão sendo gerados no client após a renderização da página. Devemos gerar ele no servidor para não dar problema com SEO e melhorar a performance evitando um load inicial.
+O problema é que nossos dados estão sendo gerados no client após a renderização da página. Devemos gerar ele no servidor para não dar problema com SEO e melhorar a performance evitando um load inicial. Para evitar isso crie um arquivo `utils/apollo.ts` que verifica se ja existe uma isntancia do Client, se não existir ele cria uma nova em modo SSR.
