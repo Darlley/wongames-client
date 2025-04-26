@@ -101,3 +101,52 @@ Faça uma condicional pela propriedade com destriction de bjeto vazio (se existi
   {...props}
 />
 ```
+
+---
+
+### GRAPHQL
+
+Enquanto o Strapi usa por baixo dos panos o Apollo Server, na nossa aplciação Next usamos o [Apollo Client](https://www.apollographql.com/docs/react/get-started), que fuciona de forma parecida com SWR ou React Query, é um Gerenciador de Estados próprio para GraphQL.
+
+`npm install @apollo/client graphql`
+
+Crie um Provider na `_app.tsx`
+
+```tsx
+import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client'
+
+export default function App() {
+  const client = new ApolloClient({
+    uri: "http://localhost:1337/graphql",
+    cache: new InMemoryCache()
+  })
+
+  return (
+    <ApolloProvider client={client}>
+      {children}
+    </ApolloProvider>
+  )
+}
+```
+
+E nos componentes use o Hook do Apollo:
+
+```tsx
+import { useQuery, gql } from '@apollo/client';
+
+export default function ComponenteXYZ() {
+  const { loading, error, data } = useQuery(
+    gql`
+      query getGames {
+        games {
+          name
+        }
+      }
+    `
+  );
+
+  loading && <p>Carregando...</p>
+  error && <p>Erro...</p>
+  data && <Listagem />
+}
+```

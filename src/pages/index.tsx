@@ -1,24 +1,23 @@
-import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
+import { useQuery, gql } from '@apollo/client';
 
 import Home from 'templates/Home'
 import bannersMock from 'components/BannerSlider/mock'
 import gamesMock from 'components/GameCardSlider/mock'
 import highlightMock from 'components/Highlight/mock'
 
-export default function Index(props: any) {
-  const client = new ApolloClient({
-    uri: "http://localhost:1337/graphql",
-    cache: new InMemoryCache()
-  })
+const GET_LOCATIONS = gql`
+  query getGames {
+    games {
+      name
+    }
+  }
+`
 
-  client.query({
-    query: gql`
-      query getGames {
-        games {
-          name
-        }
-      }
-    `
+export default function Index(props: any) {
+  const { loading, error, data } = useQuery(GET_LOCATIONS);
+
+  console.log({
+    loading, error, data
   })
 
   return <Home {...props} />
