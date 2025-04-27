@@ -57,7 +57,7 @@ const ExploreSidebar = ({
       </S.IconWrapper>
 
       <S.Content>
-        {items.map((item) => (
+        {items?.map((item) => (
           <S.Items key={item.title}>
             <Heading lineBottom lineColor="secondary" size="small">
               {item.title}

@@ -101,3 +101,92 @@ Faça uma condicional pela propriedade com destriction de bjeto vazio (se existi
   {...props}
 />
 ```
+
+---
+
+### GRAPHQL
+
+Enquanto o Strapi usa por baixo dos panos o Apollo Server, na nossa aplciação Next usamos o [Apollo Client](https://www.apollographql.com/docs/react/get-started), que fuciona de forma parecida com SWR ou React Query, é um Gerenciador de Estados próprio para GraphQL.
+
+`npm install @apollo/client graphql`
+
+Crie um Provider na `_app.tsx`
+
+```tsx
+import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client'
+
+export default function App() {
+  const client = new ApolloClient({
+    uri: "http://localhost:1337/graphql",
+    cache: new InMemoryCache()
+  })
+
+  return (
+    <ApolloProvider client={client}>
+      {children}
+    </ApolloProvider>
+  )
+}
+```
+
+E nos componentes use o Hook do Apollo:
+
+```tsx
+import { useQuery, gql } from '@apollo/client';
+
+export default function ComponenteXYZ() {
+  const { loading, error, data } = useQuery(
+    gql`
+      query getGames {
+        games {
+          name
+        }
+      }
+    `
+  );
+
+  loading && <p>Carregando...</p>
+  error && <p>Erro...</p>
+  data && <Listagem />
+}
+```
+
+No DevTools você consegue ver a request do GraphQL.
+
+O problema é que nossos dados estão sendo gerados no client após a renderização da página. Devemos gerar ele no servidor para não dar problema com SEO e melhorar a performance evitando um load inicial. Para evitar isso crie um arquivo `utils/apollo.ts` que verifica se ja existe uma isntancia do Client, se não existir ele cria uma nova em modo SSR.
+
+Agora fazendo a requisição no servidor:
+
+```tsx
+export async function getServerSideProps() {
+  const apolloClient = initializeApollo()
+
+  const { data, loading, error } = await apolloClient.query({
+    query: GET_LOCATIONS
+  })
+
+  return {
+    props: {
+      data
+    }
+  }
+}
+```
+
+No DevTools você não consegue mais ver a request do GraphQL, mas consegue fazer um console.log para ver na CLI ou receber o data pela props do componente.
+
+--- 
+
+Como estamos trabalhando com SSR toda requisição deve ser feita em páginas.
+
+Com o `getServerSideProps` toda vez que faz uma requisição ele refaz tudo, muitas requisições sobrecarrega o servidor. Uma página de listagens de jogos não precisa ser real time, então é melhor usar o `getStaticProps` para gerar estático em build time, mas diferente do Gatsby passamos uma parametro `revalidate` para ele atualizar o estático (refazer o build) em determinado tempo em segundos. Então quando o cliente acessa a página ele vê uma página estática que foi gerada em até 60 segundos atrás.
+
+---
+
+Para a geração de tipagens com `apollo` deu erro na primeira tentativa então eu testei outra solução, mas eu voltei atras e instalei as mesmas versões utilizadas no curso e deu certo.
+
+Mas a ouutra solução que eu tinha testado foi esta https://www.apollographql.com/tutorials/client-side-graphql-react/05-codegen:
+
+1. instalar as dependencias `npm install -D @graphql-codegen/cli @graphql-codegen/client-preset`.
+2. Criar o arquivo `apollo.config.js`
+3. Executar o script `graphql:generate: graphql-codegen`
