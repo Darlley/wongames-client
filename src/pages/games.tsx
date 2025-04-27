@@ -10,7 +10,7 @@ export default function GamesPage(props: GamesTemplateProps) {
 export async function getStaticProps() {
   const apolloClient = initializeApollo()
 
-  const { data } = await apolloClient.query({
+  const { data } = await apolloClient.query<ResponseQuery, QueryGamesVariables>({
     query: QUERY_GAMES,
     variables: {
       limit: 9
@@ -20,7 +20,7 @@ export async function getStaticProps() {
   return {
     props: {
       revalidate: 6,
-      games: data.games.map((game: GameType) => ({
+      games: data?.games?.map((game) => ({
         title: game?.name,
         developer: game?.developers[0].name,
         img: game?.cover?.url ? `http://localhost:1337${game?.cover?.url}` : '/img/logo-gh.svg',
@@ -34,7 +34,11 @@ export async function getStaticProps() {
   }
 }
 
-type GameType = {
+type ResponseQuery = {
+  games: QueryGames[]
+}
+
+type QueryGames = {
   name: string
   slug: string
   price: number
@@ -44,4 +48,8 @@ type GameType = {
   developers: Array<{
     name: string
   }>
+}
+
+type QueryGamesVariables = {
+  limit: number
 }
