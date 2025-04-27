@@ -21,6 +21,7 @@ export async function getStaticProps() {
     props: {
       revalidate: 6,
       games: data?.games?.map((game) => ({
+        slug: game?.slug,
         title: game?.name,
         developer: game?.developers[0].name,
         img: game?.cover?.url ? `http://localhost:1337${game?.cover?.url}` : '/img/logo-gh.svg',
