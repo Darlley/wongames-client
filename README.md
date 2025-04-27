@@ -6,6 +6,21 @@ Inicio: 10/02/2025
 
 [![thumbnail](https://reactavancado.com.br/img/cover.png)](https://www.udemy.com/course/react-avancado/)
 
+---
+
+![Captura de tela 2025-04-27 143850](https://github.com/user-attachments/assets/413a735a-eed4-4e00-beed-b90a8f463bf2)
+![Captura de tela 2025-04-27 143906](https://github.com/user-attachments/assets/a5719f14-cff0-456b-b772-fe99ca913cc5)
+![Captura de tela 2025-04-27 143935](https://github.com/user-attachments/assets/4a7d627c-6b27-4870-b5b1-8224b4f2cec1)
+![Captura de tela 2025-04-27 143944](https://github.com/user-attachments/assets/9fbf4264-49dd-446c-8b42-2d90d3663bc8)
+![Captura de tela 2025-04-27 144134](https://github.com/user-attachments/assets/d549a32f-f1cf-438a-8d64-5c53331a6283)
+![Captura de tela 2025-04-27 144149](https://github.com/user-attachments/assets/a088f98a-4ba5-446e-ae33-564e708b982c)
+![Captura de tela 2025-04-27 144127](https://github.com/user-attachments/assets/c5fda8c9-85a2-4991-83e6-c234072cfbfd)
+![Captura de tela 2025-04-27 144045](https://github.com/user-attachments/assets/f2aefbdb-da11-428b-b208-fb025265ef59)
+![Captura de tela 2025-04-27 144026](https://github.com/user-attachments/assets/111b55d7-0861-4204-83f1-59a08a8dc200)
+![Captura de tela 2025-04-27 145056](https://github.com/user-attachments/assets/38f067ba-3fa2-4bd7-b805-9150cb1d9a7f)
+
+---
+
 Figma do projeto: [https://www.figma.com/design/xwq...](https://www.figma.com/design/xwqB4b2hX8yPmp66vRuHLz/Won-Games---Em-Andamento!!?node-id=43-1&p=f&t=4xR3vdgHbOZMGaiI-0)
 
 ## ANDAMENTO DAS AULAS
