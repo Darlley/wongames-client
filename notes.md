@@ -181,3 +181,12 @@ Como estamos trabalhando com SSR toda requisição deve ser feita em páginas.
 
 Com o `getServerSideProps` toda vez que faz uma requisição ele refaz tudo, muitas requisições sobrecarrega o servidor. Uma página de listagens de jogos não precisa ser real time, então é melhor usar o `getStaticProps` para gerar estático em build time, mas diferente do Gatsby passamos uma parametro `revalidate` para ele atualizar o estático (refazer o build) em determinado tempo em segundos. Então quando o cliente acessa a página ele vê uma página estática que foi gerada em até 60 segundos atrás.
 
+---
+
+Para a geração de tipagens com `apollo` deu erro na primeira tentativa então eu testei outra solução, mas eu voltei atras e instalei as mesmas versões utilizadas no curso e deu certo.
+
+Mas a ouutra solução que eu tinha testado foi esta https://www.apollographql.com/tutorials/client-side-graphql-react/05-codegen:
+
+1. instalar as dependencias `npm install -D @graphql-codegen/cli @graphql-codegen/client-preset`.
+2. Criar o arquivo `apollo.config.js`
+3. Executar o script `graphql:generate: graphql-codegen`
