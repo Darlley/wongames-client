@@ -16,3 +16,41 @@ export const QUERY_GAMES = gql`
     }
   }
 `
+
+export const QUERY_GAME_BY_SLUG = gql`
+  query QueryGameBySlug ($slug: String) {
+    games (
+      filters:  {
+        slug:  {
+          eq: $slug
+        }
+      }
+    ) {
+      name
+      description
+      short_description
+      rating
+      release_date
+      cover {
+        src: url
+        label: alternativeText
+      }
+      gallery {
+        src: url
+        label: alternativeText
+      }
+      developers {
+        name
+      }
+      publisher {
+        name
+      }
+      categories {
+        name
+      }
+      platforms {
+        name
+      }
+    }
+  }
+` 
