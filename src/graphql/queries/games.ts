@@ -27,6 +27,7 @@ export const QUERY_GAME_BY_SLUG = gql`
       }
     ) {
       name
+      price
       description
       short_description
       rating

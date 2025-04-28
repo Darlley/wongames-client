@@ -16,7 +16,7 @@ const GameInfo = ({
   price
 }: GameInfoProps) => (
   <S.Wrapper>
-    <Heading>{title}</Heading>
+    <Heading color="black" lineBottom>{title}</Heading>
     <Ribbon color="secondary">R${`${price}`}</Ribbon>
     <S.Description>{description}</S.Description>
     <S.ButtonsWrapper>

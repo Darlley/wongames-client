@@ -258,3 +258,5 @@ query QueryGameBySlug ($slug: String) {
   }
 }
 ```
+
+Em `src/pages/game/[slug].tsx`, o `getStaticPaths` gera o build das paginas baseada na URL do game e o `getStaticProps` vai alimentar a página com os dados dinamicos que ela precisa em SSR sem precisar recarregar os dados sempre, nos configuramos para revalida-los a cada 2 minutos (120 segundos).
