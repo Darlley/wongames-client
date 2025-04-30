@@ -7,7 +7,7 @@ import Ribbon from 'components/Ribbon'
 export type GameInfoProps = {
   title: string,
   description: string,
-  price: string
+  price: number
 }
 
 const GameInfo = ({
@@ -17,7 +17,7 @@ const GameInfo = ({
 }: GameInfoProps) => (
   <S.Wrapper>
     <Heading color="black" lineBottom>{title}</Heading>
-    <Ribbon color="secondary">R${`${price}`}</Ribbon>
+    <Ribbon color="secondary">{price === 0 ? new Intl.NumberFormat('en', { style: 'currency', currency: 'USD' }).format(price) : 'Free'}</Ribbon>
     <S.Description>{description}</S.Description>
     <S.ButtonsWrapper>
       <Button icon={<AddShoppingCart />} size="large">Add To Cart</Button>

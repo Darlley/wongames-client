@@ -15,7 +15,7 @@ export type GameTemplateProps = {
   gameInfo: {
     title: string
     description: string
-    price: string
+    price: number
   },
   description: string,
   gallery?: GalleryImageProps[],
