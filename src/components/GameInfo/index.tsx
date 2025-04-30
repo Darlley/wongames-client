@@ -3,6 +3,7 @@ import * as S from './styles'
 import Button from 'components/Button'
 import { AddShoppingCart, FavoriteBorder } from '@styled-icons/material-outlined'
 import Ribbon from 'components/Ribbon'
+import { formatPrice } from 'utils/format-price'
 
 export type GameInfoProps = {
   title: string,
@@ -17,7 +18,7 @@ const GameInfo = ({
 }: GameInfoProps) => (
   <S.Wrapper>
     <Heading color="black" lineBottom>{title}</Heading>
-    <Ribbon color="secondary">{price === 0 ? new Intl.NumberFormat('en', { style: 'currency', currency: 'USD' }).format(price) : 'Free'}</Ribbon>
+    <Ribbon color="secondary">{price === 0 ? formatPrice(price) : 'Free'}</Ribbon>
     <S.Description>{description}</S.Description>
     <S.ButtonsWrapper>
       <Button icon={<AddShoppingCart />} size="large">Add To Cart</Button>
