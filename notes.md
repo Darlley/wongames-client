@@ -260,3 +260,39 @@ query QueryGameBySlug ($slug: String) {
 ```
 
 Em `src/pages/game/[slug].tsx`, o `getStaticPaths` gera o build das paginas baseada na URL do game e o `getStaticProps` vai alimentar a página com os dados dinamicos que ela precisa em SSR sem precisar recarregar os dados sempre, nos configuramos para revalida-los a cada 2 minutos (120 segundos).
+
+---
+
+As props do nextjs quebra se o dado for undefined, ele prefere que seja retornado um null:
+
+```tsx
+export async function getServerSideProps() {
+  return {
+    props: {
+      banners: data.banners.map((banner) => ({
+        ribbon: banner?.ribbon?.text || null,
+        ribbonColor: banner?.ribbon?.color || null,
+        ribbonSize: banner?.ribbon?.size || null,
+      })),
+    }
+  }
+}
+```
+
+Mas outtro jeito de melhorar a sintaxe é fazer com destructing: 
+
+```tsx
+export async function getServerSideProps() {
+  return {
+    props: {
+      banners: data.banners.map((banner) => ({
+        ...(banner?.ribbon && {
+          ribbon: banner?.ribbon?.text || null,
+          ribbonColor: banner?.ribbon?.color || null,
+          ribbonSize: banner?.ribbon?.size || null,
+        }),
+      })),
+    }
+  }
+}
+```

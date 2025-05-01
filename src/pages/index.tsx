@@ -1,16 +1,36 @@
 import Home, { HomeTemplateProps } from 'templates/Home'
-import bannersMock from 'components/BannerSlider/mock'
 import gamesMock from 'components/GameCardSlider/mock'
 import highlightMock from 'components/Highlight/mock'
+import { initializeApollo } from 'utils/apollo'
+import { QUERY_HOME } from 'graphql/queries/home'
+import { QueryHome } from 'graphql/types/home.types'
 
 export default function Index(props: HomeTemplateProps) {
   return <Home {...props} />
 }
 
 export async function getServerSideProps() {
+  const apolloClienty = initializeApollo()
+
+  const { data } = await apolloClienty.query<QueryHome>({
+    query: QUERY_HOME
+  })
+
   return {
     props: {
-      banners: bannersMock,
+      revalidate: 10,
+      banners: data.banners.map((banner) => ({
+        img: `http://localhost:1337${banner.image.url}`,
+        title: banner?.title,
+        subtitle: banner?.subtitle,
+        buttonLabel: banner?.button?.label,
+        buttonLink: banner?.button?.link,
+        ...(banner?.ribbon && {
+          ribbon: banner?.ribbon?.text || null,
+          ribbonColor: banner?.ribbon?.color || null,
+          ribbonSize: banner?.ribbon?.size || null,
+        }),
+      })),
       newGames: gamesMock,
       mostPopularHighlight: highlightMock,
       mostPopularGames: gamesMock,
