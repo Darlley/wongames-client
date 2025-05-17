@@ -1,8 +1,18 @@
+import { ENUM_COMPONENTPAGERIBBON_COLOR, ENUM_COMPONENTPAGERIBBON_SIZE } from "./global.types";
+import { QueryGameBySlugGamesType, QueryGamesType } from "./games.types";
+
+/**
+ * HOME
+*/
+export interface QueryHome {
+  banners: QueryHome_banners[];
+  newGames: QueryHome_newGames[];
+}
+
 
 /**
  * BANNER
  */
-
 export interface QueryHome_banners {
   __typename: "Banner";
   image: QueryHome_banners_image;
@@ -13,16 +23,32 @@ export interface QueryHome_banners {
   game: QueryGamesType | null;
 }
 
-export interface QueryHome {
-  banners: QueryHome_banners[];
+
+/**
+ * NEW GAMES
+ */
+export interface QueryHome_newGames_cover {
+  __typename: "UploadFile";
+  url: string;
 }
 
-import { QueryGameBySlugGamesType, QueryGamesType } from "./games.types";
+export interface QueryHome_newGames_developers {
+  __typename: "Developer";
+  name: string;
+}
+
+export interface QueryHome_newGames {
+  __typename: "Game";
+  name: string;
+  slug: string;
+  cover: QueryHome_newGames_cover | null;
+  developers: QueryHome_newGames_developers[];
+  price: number;
+}
+
 /**
  * FIELDS
  */
-
-import { ENUM_COMPONENTPAGERIBBON_COLOR, ENUM_COMPONENTPAGERIBBON_SIZE } from "./global.types";
 
 export interface QueryHome_banners_image {
   __typename: "UploadFile";
