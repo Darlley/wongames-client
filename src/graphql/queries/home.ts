@@ -12,7 +12,7 @@ export const QUERY_HOME = gql`
     newGames: games ( 
       filters:  {
         release_date:  {
-          lte: "2025-05-02"
+          gt: "2025-05-18"
         }
       }, 
       sort: ["release_date:desc"]
