@@ -2,6 +2,8 @@
  * GAMES
  */
 
+import { ENUM_GAME_RATING } from "./global.types"
+
 export type ResponseQueryGamesType = {
   games: QueryGamesType[]
 }
@@ -85,13 +87,4 @@ export interface QueryGameBySlug_games_categories {
 export interface QueryGameBySlug_games_platforms {
   __typename: "Platform";
   name: string;
-}
-
-export enum ENUM_GAME_RATING {
-  BR0 = "BR0",
-  BR10 = "BR10",
-  BR12 = "BR12",
-  BR14 = "BR14",
-  BR16 = "BR16",
-  BR18 = "BR18",
 }
