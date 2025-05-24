@@ -16,3 +16,8 @@ export enum ENUM_GAME_RATING {
   BR16 = "BR16",
   BR18 = "BR18",
 }
+
+export enum ENUM_COMPONENTPAGEHIGHLIGHT_ALIGNMENT {
+  left = "left",
+  right = "right",
+}
