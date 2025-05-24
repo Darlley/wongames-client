@@ -253,3 +253,11 @@ export interface QueryHome_banners_ribbon {
   color: ENUM_COMPONENTPAGERIBBON_COLOR | null;
   size: ENUM_COMPONENTPAGERIBBON_SIZE | null;
 }
+
+/**
+ * VARIABLES
+ */
+
+export interface QueryHomeVariables {
+  date: any;
+}
