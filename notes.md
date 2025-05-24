@@ -106,6 +106,29 @@ Faça uma condicional pela propriedade com destriction de bjeto vazio (se existi
 
 ### GRAPHQL
 
+GraphQL tem Queries e Mutations, a seleção de dados e a manipulação dos dados respectivamente.
+
+A primeira query que fizemos foi para buscar os games e adicionar um parametro `$limit` para limitar a listagem na página em 9:
+
+```yml
+query QueryGames ($limit: Int!) {
+  games (pagination: { limit: $limit }) {
+    name
+    slug
+    price
+
+    cover {
+      url
+    }
+    developers {
+      name
+    }
+  }
+}
+```
+
+Ela foi armazenada em `src/graphql/queries/games.ts`.
+
 Enquanto o Strapi usa por baixo dos panos o Apollo Server, na nossa aplciação Next usamos o [Apollo Client](https://www.apollographql.com/docs/react/get-started), que fuciona de forma parecida com SWR ou React Query, é um Gerenciador de Estados próprio para GraphQL.
 
 `npm install @apollo/client graphql`
@@ -161,8 +184,11 @@ Agora fazendo a requisição no servidor:
 export async function getServerSideProps() {
   const apolloClient = initializeApollo()
 
-  const { data, loading, error } = await apolloClient.query({
-    query: GET_LOCATIONS
+  const { data } = await apolloClient.query<ResponseQuery, QueryGamesVariables>({
+    query: QUERY_GAMES, // src/graphql/queries/games.ts
+    variables: {
+      limit: 9
+    },
   })
 
   return {
@@ -183,10 +209,96 @@ Com o `getServerSideProps` toda vez que faz uma requisição ele refaz tudo, mui
 
 ---
 
-Para a geração de tipagens com `apollo` deu erro na primeira tentativa então eu testei outra solução, mas eu voltei atras e instalei as mesmas versões utilizadas no curso e deu certo.
-
-Mas a ouutra solução que eu tinha testado foi esta https://www.apollographql.com/tutorials/client-side-graphql-react/05-codegen:
+Para a geração de tipagens `query<ResponseQuery, QueryGamesVariables>` no curso foi gerado automaticamente com apollo (o comando `npm run types:generate`) no meu deu erro então testei outra solução: https://www.apollographql.com/tutorials/client-side-graphql-react/05-codegen
 
 1. instalar as dependencias `npm install -D @graphql-codegen/cli @graphql-codegen/client-preset`.
 2. Criar o arquivo `apollo.config.js`
 3. Executar o script `graphql:generate: graphql-codegen`
+
+O problema com esta é que as tipagens ficaram em um formato diferente, então acabei fazendo manualmente mesmo.
+
+---
+
+Após isso fizemos a query para a página do game, e fazendo alias quando necessário:
+
+```yml
+query QueryGameBySlug ($slug: String) {
+  games (
+    filters:  {
+      slug:  {
+        eq: $slug
+      }
+    }
+  ) {
+    name
+    description
+    short_description
+    rating
+    release_date
+    cover {
+      src: url
+      label: alternativeText
+    }
+    gallery {
+      src: url
+      label: alternativeText
+    }
+    developers {
+      name
+    }
+    publisher {
+      name
+    }
+    categories {
+      name
+    }
+    platforms {
+      name
+    }
+  }
+}
+```
+
+Em `src/pages/game/[slug].tsx`, o `getStaticPaths` gera o build das paginas baseada na URL do game e o `getStaticProps` vai alimentar a página com os dados dinamicos que ela precisa em SSR sem precisar recarregar os dados sempre, nos configuramos para revalida-los a cada 2 minutos (120 segundos).
+
+---
+
+As props do nextjs quebra se o dado for undefined, ele prefere que seja retornado um null:
+
+```tsx
+export async function getServerSideProps() {
+  return {
+    props: {
+      banners: data.banners.map((banner) => ({
+        ribbon: banner?.ribbon?.text || null,
+        ribbonColor: banner?.ribbon?.color || null,
+        ribbonSize: banner?.ribbon?.size || null,
+      })),
+    }
+  }
+}
+```
+
+Mas outtro jeito de melhorar a sintaxe é fazer com destructing: 
+
+```tsx
+export async function getServerSideProps() {
+  return {
+    props: {
+      banners: data.banners.map((banner) => ({
+        ...(banner?.ribbon && {
+          ribbon: banner?.ribbon?.text || null,
+          ribbonColor: banner?.ribbon?.color || null,
+          ribbonSize: banner?.ribbon?.size || null,
+        }),
+      })),
+    }
+  }
+}
+```
+
+---
+
+### MAPPERS
+
+Criamos funções utilitárias em `src/utils`, uma delas foi o `mappers.ts` para reutilizar códigos repetitivos ao passar props para components que sejam muito parecidos (como os hightlights na Home).
