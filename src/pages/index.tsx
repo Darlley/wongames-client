@@ -61,7 +61,13 @@ export async function getServerSideProps() {
         img: game.cover ? `http://localhost:1337${game.cover.url}` : '/img/logo-gh.svg',
         price: game.price
       })),
-      freeHighligth: highlightMock
+      freeHighligth: highlightMock,
+      sectionTitles: {
+        newGames: sections?.newGames?.title ?? "News",
+        mostPopularGames: sections?.popularGames?.title ?? "Most Popular",
+        upcomingGames: sections?.upcomingGames?.title ?? "Upcoming",
+        freeGames: sections?.freeGames?.title ?? "Free games",
+      }
     }
   }
 }
