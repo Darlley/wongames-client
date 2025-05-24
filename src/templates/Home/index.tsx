@@ -49,17 +49,23 @@ const Home = ({
       <Showcase title={sectionTitles?.newGames} games={newGames} color="black" />
     </S.SectionNews>
 
-    <Container>
-      <Showcase
-        title={sectionTitles?.mostPopularGames}
-        highlight={mostPopularHighlight}
-        games={mostPopularGames}
-      />
+    <Showcase
+      title={sectionTitles?.mostPopularGames}
+      highlight={mostPopularHighlight}
+      games={mostPopularGames}
+    />
 
-      <Showcase title={sectionTitles?.upcomingGames} games={upcomingGames} highlight={upcomingHighlight} />
+    <Showcase
+      title={sectionTitles?.upcomingGames}
+      highlight={upcomingHighlight}
+      games={upcomingGames}
+    />
 
-      <Showcase title={sectionTitles?.freeGames} highlight={freeHighlight} games={freeGames} />
-    </Container>
+    <Showcase
+      title={sectionTitles?.freeGames}
+      highlight={freeHighlight}
+      games={freeGames}
+    />
   </Base>
 )
 
