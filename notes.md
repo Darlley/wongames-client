@@ -296,3 +296,9 @@ export async function getServerSideProps() {
   }
 }
 ```
+
+---
+
+### MAPPERS
+
+Criamos funções utilitárias em `src/utils`, uma delas foi o `mappers.ts` para reutilizar códigos repetitivos ao passar props para components que sejam muito parecidos (como os hightlights na Home).
