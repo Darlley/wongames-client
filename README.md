@@ -204,7 +204,13 @@ Artigo citado: ["A Comprehensive Guide to Font Loading Strategies" (Zach Leather
 | 190. Gallery Parte 5: Criando método de close com a tecla ESC (useEffect hook)        |   ✅   |
 | 191. Gallery Parte 6: Criando e referenciando o slider do modal com o slider externo  |   ✅   |
 
-| OUTRAS                                            | Status |
-|---------------------------------------------------| :----: |
-| Seção 21: Módulo 3: Criando a página de Games     |   ✅   |
-| Seção 22: Módulo 3: Criando a página de Wishlist  |   ✅   |
+| OUTRAS                                                                              | Status |
+|-------------------------------------------------------------------------------------| :----: |
+| Seção 21: Módulo 3: Criando a página de Games                                       |   ✅   |
+| Seção 22: Módulo 3: Criando a página de Wishlist                                    |   ✅   |
+| Seção 23: Módulo 3: Criando os componentes e página do carrinho                     |   ✅   |
+| Seção 24: Módulo 3: Criando componentes e páginas do Profile (/me, /orders, /cards) |   ✅   |
+| Seção 25: Módulo 3: Criando ExploreSidebar e página de Explore                      |   ✅   |
+| Seção 26: Módulo 3: Criando dropdowns, ajustes finais e página 404                  |   ✅   |
+| Seção 27: Módulo 3: Trabalhando com o GraphQL usando Apollo Client                  |   ✅   |
+| Seção 28: Módulo 3: Criando a Home Page dinâmica                                    |   ✅   |
