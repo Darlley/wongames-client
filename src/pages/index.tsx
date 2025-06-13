@@ -9,11 +9,13 @@ export default function Index(props: HomeTemplateProps) {
 }
 
 export async function getServerSideProps() {
-  const apolloClienty = initializeApollo()
+  const apolloClient = initializeApollo()
 
   const TODAY_DATE = new Date().toISOString().slice(0, 10)
 
-  const { data: { banners, newGames, upcomingGames, freeGames, sections } } = await apolloClienty.query<QueryHome, QueryHomeVariables>({
+  const { 
+    data: { banners, newGames, upcomingGames, freeGames, sections } 
+  } = await apolloClient.query<QueryHome, QueryHomeVariables>({
     query: QUERY_HOME,
     variables: {
       date: TODAY_DATE
