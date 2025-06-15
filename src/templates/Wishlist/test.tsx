@@ -10,7 +10,8 @@ import highlightMock from 'components/Highlight/mock'
 const props = {
   games: gamesMock,
   recommendedHighlight: highlightMock,
-  recommendedGames: gamesMock
+  recommendedGames: gamesMock,
+  recommendTitle: "You may like these games"
 }
 
 jest.mock('components/Showcase', () => ({
